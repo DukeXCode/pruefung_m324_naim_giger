@@ -5,13 +5,20 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "format-check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run lint && npm run format-check && node index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "chalk": "^5.3.0",
-    "eslint": "^9.16.0",
     "prettier": "^3.4.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "eslint": "^9.16.0",
+    "globals": "^15.13.0"
   }
 }
