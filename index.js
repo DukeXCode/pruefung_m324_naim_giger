@@ -1,3 +1,3 @@
 import chalk from 'chalk';
 
-console.log(chalk.green('It works'));
+console.log(chalk.blue('It works'));
